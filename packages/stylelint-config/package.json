@@ -1,9 +1,9 @@
 {
   "name": "@lewebsimple/stylelint-config",
-  "version": "0.1.1",
-  "main": "index.js",
+  "version": "0.1.2",
+  "main": "index.cjs",
   "files": [
-    "index.js"
+    "index.cjs"
   ],
   "dependencies": {
     "stylelint-config-prettier": "^9.0.4",
