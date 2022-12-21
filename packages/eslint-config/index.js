@@ -7,6 +7,16 @@ module.exports = {
     node: true,
   },
   extends: [
-    "eslint:recommended"
-  ]
+    "eslint:recommended",
+    "plugin:prettier/recommended",
+  ],
+  rules: {
+    // Prettier
+    "prettier/prettier": ["error", {
+      printWidth: 120,
+      semi: true,
+      tabWidth: 2,
+      trailingComma: "all"
+    }],
+  },
 };
