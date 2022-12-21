@@ -1,0 +1,8 @@
+{
+  "name": "@lewebsimple/lint",
+  "version": "0.1.0",
+  "author": "Pascal Martineau <pascal@lewebsimple.ca>",
+  "license": "MIT",
+  "description": "Code linting experiments",
+  "scripts": {}
+}
