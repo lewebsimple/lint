@@ -18,7 +18,7 @@ pnpm add -D eslint @lewebsimple/eslint-config
 ```json
 {
   "scripts": {
-    "lint": "eslint --fix .",
+    "lint": "eslint --fix ."
   },
   "eslintConfig": {
     "extends": "@lewebsimple/eslint-config"

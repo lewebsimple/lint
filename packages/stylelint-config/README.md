@@ -17,7 +17,7 @@ pnpm add -D stylelint @lewebsimple/stylelint-config
 ```json
 {
   "scripts": {
-    "lint": "stylelint --fix \"**/*.{css,scss,vue}\"",
+    "lint": "stylelint --fix \"**/*.{css,scss,vue}\""
   },
   "stylelint": {
     "extends": "@lewebsimple/stylelint-config"
