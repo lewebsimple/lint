@@ -21,6 +21,7 @@ module.exports = defineConfig({
     "plugin:import/typescript",
     "plugin:prettier/recommended",
   ],
+  plugins: ["simple-import-sort"],
   ignorePatterns: [".nuxt", ".output", "dist", "node_modules"],
   overrides: [
     {
@@ -39,16 +40,12 @@ module.exports = defineConfig({
   ],
   rules: {
     // Imports
-    "sort-imports": [
-      "error",
-      {
-        ignoreCase: false,
-        ignoreDeclarationSort: false,
-        ignoreMemberSort: false,
-        memberSyntaxSortOrder: ["none", "all", "multiple", "single"],
-        allowSeparatedGroups: false,
-      },
-    ],
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+    "import/first": "error",
+    "import/newline-after-import": "error",
+    "import/no-duplicates": "error",
+    "import/no-unresolved": "off",
 
     // Prettier
     "prettier/prettier": [
