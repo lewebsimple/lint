@@ -39,12 +39,8 @@ importers:
 
   packages/stylelint-config:
     specifiers:
-      prettier: ^2.8.1
-      stylelint-config-prettier: ^9.0.4
       stylelint-config-standard-scss: ^6.1.0
     dependencies:
-      prettier: 2.8.1
-      stylelint-config-prettier: 9.0.4
       stylelint-config-standard-scss: 6.1.0
 
 packages:
@@ -1629,14 +1625,6 @@ packages:
   /style-search/0.1.0:
     resolution: {integrity: sha512-Dj1Okke1C3uKKwQcetra4jSuk0DqbzbYtXipzFlFMZtowbF1x7BKJwB9AayVMyFARvU8EDrZdcax4At/452cAg==}
     dev: true
-
-  /stylelint-config-prettier/9.0.4:
-    resolution: {integrity: sha512-38nIGTGpFOiK5LjJ8Ma1yUgpKENxoKSOhbDNSemY7Ep0VsJoXIW9Iq/2hSt699oB9tReynfWicTAoIHiq8Rvbg==}
-    engines: {node: '>= 12'}
-    hasBin: true
-    peerDependencies:
-      stylelint: '>=11.0.0'
-    dev: false
 
   /stylelint-config-recommended-scss/8.0.0:
     resolution: {integrity: sha512-BxjxEzRaZoQb7Iinc3p92GS6zRdRAkIuEu2ZFLTxJK2e1AIcCb5B5MXY9KOXdGTnYFZ+KKx6R4Fv9zU6CtMYPQ==}

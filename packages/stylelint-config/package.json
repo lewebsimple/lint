@@ -1,17 +1,21 @@
 {
   "name": "@lewebsimple/stylelint-config",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "main": "index.cjs",
   "files": [
     "index.cjs"
   ],
   "dependencies": {
-    "stylelint-config-prettier": "^9.0.4",
-    "stylelint-config-standard-scss": "^6.1.0",
-    "prettier": "^2.8.1"
+    "stylelint-config-standard-scss": "^6.1.0"
   },
   "peerDependencies": {
+    "postcss": "^8",
     "stylelint": "^14"
+  },
+  "peerDependenciesMeta": {
+    "postcss": {
+      "optional": true
+    }
   },
   "publishConfig": {
     "access": "public"
