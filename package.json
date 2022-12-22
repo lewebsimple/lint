@@ -5,7 +5,7 @@
   "author": "Pascal Martineau <pascal@lewebsimple.ca>",
   "license": "MIT",
   "scripts": {
-    "lint": "eslint --fix ."
+    "lint": "eslint --fix . && stylelint --fix \"**/*.{css,scss,vue}\""
   },
   "devDependencies": {
     "eslint": "^8.30.0",
