@@ -1,4 +1,11 @@
 const { defineConfig } = require("eslint-define-config");
+const { getPackageInfoSync } = require("local-pkg");
+
+// Determine Vue version
+const pkg = getPackageInfoSync("vue");
+let vueVersion = pkg && pkg.version;
+vueVersion = +(vueVersion && vueVersion[0]);
+vueVersion = Number.isNaN(vueVersion) ? 3 : vueVersion;
 
 module.exports = defineConfig({
   env: {
@@ -6,7 +13,12 @@ module.exports = defineConfig({
     browser: true,
     node: true,
   },
-  extends: ["plugin:@typescript-eslint/recommended", "eslint:recommended", "plugin:prettier/recommended"],
+  extends: [
+    vueVersion === 3 ? "plugin:vue/vue3-recommended" : "plugin:vue/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "eslint:recommended",
+    "plugin:prettier/recommended",
+  ],
   overrides: [
     {
       files: ["*.js", "*.cjs"],
@@ -16,6 +28,11 @@ module.exports = defineConfig({
     },
   ],
   rules: {
+    // Vue
+    "vue/max-attributes-per-line": "off",
+    "vue/no-v-html": "off",
+    "vue/multi-word-component-names": "off",
+    "vue/component-name-in-template-casing": ["error", "PascalCase", { registeredComponentsOnly: false }],
     // TypeScript
     "@typescript-eslint/ban-types": "off",
     "@typescript-eslint/consistent-type-imports": [
