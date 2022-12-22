@@ -33,8 +33,8 @@ importers:
       eslint-plugin-vue: 9.8.0
       local-pkg: 0.4.2
       prettier: 2.8.1
-    devDependencies:
       typescript: 4.9.4
+    devDependencies:
       vue: 3.2.45
 
   packages/stylelint-config:
@@ -1840,7 +1840,6 @@ packages:
     resolution: {integrity: sha512-Uz+dTXYzxXXbsFpM86Wh3dKCxrQqUcVMxwU54orwlJjOpO3ao8L7j5lH+dWfTwgCwIuM9GQ2kvVotzYJMXTBZg==}
     engines: {node: '>=4.2.0'}
     hasBin: true
-    dev: true
 
   /uri-js/4.4.1:
     resolution: {integrity: sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg==}
