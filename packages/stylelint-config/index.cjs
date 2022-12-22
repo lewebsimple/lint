@@ -1,6 +1,7 @@
-"use strict";
+const { resolve } = require("path");
 
 module.exports = {
+  configBaseDir: resolve(__dirname, "node_modules"),
   extends: ["stylelint-config-standard-scss", "stylelint-prettier/recommended"],
   rules: {
     "prettier/prettier": [
