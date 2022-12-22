@@ -19,6 +19,8 @@ module.exports = defineConfig({
     "eslint:recommended",
     "plugin:prettier/recommended",
   ],
+  ignorePatterns: [".nuxt", ".output", "dist", "node_modules"],
+  plugins: ["simple-import-sort"],
   overrides: [
     {
       files: ["*.js", "*.cjs"],
@@ -35,19 +37,31 @@ module.exports = defineConfig({
     },
   ],
   rules: {
-    // Vue
-    "vue/max-attributes-per-line": "off",
-    "vue/no-v-html": "off",
-    "vue/multi-word-component-names": "off",
-    "vue/component-name-in-template-casing": ["error", "PascalCase", { registeredComponentsOnly: false }],
-    "vue/html-self-closing": [
+    // Imports
+    "sort-imports": [
       "error",
       {
-        html: { void: "any", normal: "always", component: "always" },
-        svg: "always",
-        math: "always",
+        ignoreCase: false,
+        ignoreDeclarationSort: false,
+        ignoreMemberSort: false,
+        memberSyntaxSortOrder: ["none", "all", "multiple", "single"],
+        allowSeparatedGroups: false,
       },
     ],
+    "simple-import-sort/imports": "error",
+    "simple-import-sort/exports": "error",
+
+    // Prettier
+    "prettier/prettier": [
+      "error",
+      {
+        printWidth: 120,
+        semi: true,
+        tabWidth: 2,
+        trailingComma: "all",
+      },
+    ],
+
     // TypeScript
     "@typescript-eslint/ban-types": "off",
     "@typescript-eslint/consistent-type-imports": [
@@ -61,14 +75,17 @@ module.exports = defineConfig({
     "no-undef": "off",
     "no-unused-vars": "off",
 
-    // Prettier
-    "prettier/prettier": [
+    // Vue
+    "vue/max-attributes-per-line": "off",
+    "vue/no-v-html": "off",
+    "vue/multi-word-component-names": "off",
+    "vue/component-name-in-template-casing": ["error", "PascalCase", { registeredComponentsOnly: false }],
+    "vue/html-self-closing": [
       "error",
       {
-        printWidth: 120,
-        semi: true,
-        tabWidth: 2,
-        trailingComma: "all",
+        html: { void: "any", normal: "always", component: "always" },
+        svg: "always",
+        math: "always",
       },
     ],
   },
