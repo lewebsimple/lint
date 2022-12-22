@@ -17,10 +17,11 @@ module.exports = defineConfig({
     vueVersion === 3 ? "plugin:vue/vue3-recommended" : "plugin:vue/recommended",
     "plugin:@typescript-eslint/recommended",
     "eslint:recommended",
+    "plugin:import/recommended",
+    "plugin:import/typescript",
     "plugin:prettier/recommended",
   ],
   ignorePatterns: [".nuxt", ".output", "dist", "node_modules"],
-  plugins: ["simple-import-sort"],
   overrides: [
     {
       files: ["*.js", "*.cjs"],
@@ -48,8 +49,6 @@ module.exports = defineConfig({
         allowSeparatedGroups: false,
       },
     ],
-    "simple-import-sort/imports": "error",
-    "simple-import-sort/exports": "error",
 
     // Prettier
     "prettier/prettier": [
@@ -72,6 +71,7 @@ module.exports = defineConfig({
     "@typescript-eslint/no-empty-interface": "off",
     "@typescript-eslint/no-explicit-any": "off",
     "@typescript-eslint/no-unused-vars": "off",
+    "no-redeclare": "off",
     "no-undef": "off",
     "no-unused-vars": "off",
 
