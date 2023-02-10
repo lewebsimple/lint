@@ -1,27 +1,27 @@
 {
   "name": "@lewebsimple/eslint-config",
-  "version": "0.7.5",
+  "version": "0.7.6",
   "main": "index.cjs",
   "files": [
     "index.cjs"
   ],
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.47.0",
-    "@typescript-eslint/parser": "^5.47.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-define-config": "^1.12.0",
-    "eslint-import-resolver-typescript": "^3.5.2",
-    "eslint-plugin-import": "^2.26.0",
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/parser": "^5.51.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-define-config": "^1.15.0",
+    "eslint-import-resolver-typescript": "^3.5.3",
+    "eslint-plugin-import": "^2.27.5",
     "eslint-plugin-prettier": "^4.2.1",
-    "eslint-plugin-simple-import-sort": "^8.0.0",
-    "eslint-plugin-vue": "^9.8.0",
-    "local-pkg": "^0.4.2",
-    "prettier": "^2.8.1",
-    "typescript": "^4.9.4"
+    "eslint-plugin-simple-import-sort": "^10.0.0",
+    "eslint-plugin-vue": "^9.9.0",
+    "local-pkg": "^0.4.3",
+    "prettier": "^2.8.4",
+    "typescript": "^4.9.5"
   },
   "devDependencies": {
-    "eslint": "^8.30.0",
-    "vue": "^3.2.45"
+    "eslint": "^8.33.0",
+    "vue": "^3.2.47"
   },
   "peerDependencies": {
     "eslint": "^8"

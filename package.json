@@ -8,6 +8,6 @@
     "lint": "eslint --fix . && stylelint --fix \"**/*.{css,scss,vue}\""
   },
   "devDependencies": {
-    "typescript": "^4.9.4"
+    "typescript": "^4.9.5"
   }
 }
