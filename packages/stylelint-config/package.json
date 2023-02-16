@@ -1,6 +1,6 @@
 {
   "name": "@lewebsimple/stylelint-config",
-  "version": "0.7.4",
+  "version": "0.7.5",
   "main": "index.cjs",
   "files": [
     "index.cjs"
