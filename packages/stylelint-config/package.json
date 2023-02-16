@@ -1,6 +1,6 @@
 {
   "name": "@lewebsimple/stylelint-config",
-  "version": "0.7.5",
+  "version": "0.7.6",
   "main": "index.cjs",
   "files": [
     "index.cjs"
@@ -8,7 +8,6 @@
   "dependencies": {
     "postcss-html": "^1.5.0",
     "prettier": "^2.8.4",
-    "stylelint-config-prettier": "^9.0.5",
     "stylelint-config-recommended-vue": "^1.4.0",
     "stylelint-config-standard-scss": "^7.0.1",
     "stylelint-prettier": "^2.0.0"

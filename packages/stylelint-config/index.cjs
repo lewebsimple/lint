@@ -1,11 +1,7 @@
 const ignoreAtRules = ["tailwind", "apply", "variants", "responsive", "screen"];
 
 module.exports = {
-  extends: [
-    "stylelint-config-standard-scss",
-    "stylelint-config-recommended-vue/scss",
-    "stylelint-prettier/recommended",
-  ],
+  extends: ["stylelint-config-standard-scss", "stylelint-config-recommended-vue/scss"],
   plugins: ["stylelint-prettier"],
   rules: {
     // Tailwind CSS
