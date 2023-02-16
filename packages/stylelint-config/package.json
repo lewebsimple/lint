@@ -1,6 +1,6 @@
 {
   "name": "@lewebsimple/stylelint-config",
-  "version": "0.7.6",
+  "version": "0.7.7",
   "main": "index.cjs",
   "files": [
     "index.cjs"
@@ -21,5 +21,15 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "allowedVersions": {
+        "stylelint": "15"
+      },
+      "ignoreMissing": [
+        "postcss"
+      ]
+    }
   }
 }
