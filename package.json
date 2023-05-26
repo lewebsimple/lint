@@ -1,13 +1,13 @@
 {
   "name": "@lewebsimple/lint-monorepo",
   "private": "true",
-  "packageManager": "pnpm@7.0.0",
+  "packageManager": "pnpm@7.32.5",
   "author": "Pascal Martineau <pascal@lewebsimple.ca>",
   "license": "MIT",
   "scripts": {
     "lint": "eslint --fix . && stylelint --fix \"**/*.{css,scss,vue}\""
   },
   "devDependencies": {
-    "typescript": "^4.9.5"
+    "typescript": "^5.0.4"
   }
 }
