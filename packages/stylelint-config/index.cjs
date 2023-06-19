@@ -10,5 +10,6 @@ module.exports = {
     "no-descending-specificity": null,
     // Prettier
     "prettier/prettier": [true, { printWidth: 120, tabWidth: 2 }],
+    "selector-class-pattern": null,
   },
 };
