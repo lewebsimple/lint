@@ -51,6 +51,7 @@ module.exports = defineConfig({
     "prettier/prettier": [
       "error",
       {
+        printWidth: 180,
         semi: true,
         tabWidth: 2,
         trailingComma: "all",
@@ -59,7 +60,7 @@ module.exports = defineConfig({
 
     // Formatting
     "max-len": ["error", { 
-      code: 120,
+      code: 180,
       tabWidth: 2,
      }],
 
