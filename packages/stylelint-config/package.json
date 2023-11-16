@@ -7,29 +7,19 @@
   ],
   "dependencies": {
     "postcss-html": "^1.5.0",
-    "prettier": "^2.8.8",
-    "stylelint-config-standard-scss": "^9.0.0",
+    "prettier": "^3.1.0",
+    "stylelint-config-standard-scss": "^11.1.0",
     "stylelint-config-standard-vue": "^1.0.0",
-    "stylelint-prettier": "^3.0.0"
+    "stylelint-prettier": "^4.0.2"
   },
   "devDependencies": {
-    "postcss": "^8.4.24",
-    "stylelint": "^15.8.0"
+    "postcss": "^8.4.31",
+    "stylelint": "^15.11.0"
   },
   "peerDependencies": {
     "stylelint": "^15"
   },
   "publishConfig": {
     "access": "public"
-  },
-  "pnpm": {
-    "peerDependencyRules": {
-      "allowedVersions": {
-        "stylelint": "15"
-      },
-      "ignoreMissing": [
-        "postcss"
-      ]
-    }
   }
 }

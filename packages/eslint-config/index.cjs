@@ -51,7 +51,6 @@ module.exports = defineConfig({
     "prettier/prettier": [
       "error",
       {
-        printWidth: 120,
         semi: true,
         tabWidth: 2,
         trailingComma: "all",
