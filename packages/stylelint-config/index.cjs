@@ -9,7 +9,7 @@ module.exports = {
     "scss/at-rule-no-unknown": [true, { ignoreAtRules }],
     "no-descending-specificity": null,
     // Prettier
-    "prettier/prettier": [true, { printWidth: 120, tabWidth: 2 }],
+    "prettier/prettier": [true, { tabWidth: 2 }],
     "selector-class-pattern": null,
   },
 };
