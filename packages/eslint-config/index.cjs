@@ -57,6 +57,12 @@ module.exports = defineConfig({
       },
     ],
 
+    // Formatting
+    "max-len": ["error", { 
+      code: 120,
+      tabWidth: 2,
+     }],
+
     // TypeScript
     "@typescript-eslint/ban-types": "off",
     "@typescript-eslint/consistent-type-imports": [
