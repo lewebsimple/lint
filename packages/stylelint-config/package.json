@@ -1,20 +1,20 @@
 {
   "name": "@lewebsimple/stylelint-config",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "main": "index.cjs",
   "files": [
     "index.cjs"
   ],
   "dependencies": {
     "postcss-html": "^1.5.0",
-    "prettier": "^3.1.0",
-    "stylelint-config-standard-scss": "^11.1.0",
+    "prettier": "^3.1.1",
+    "stylelint-config-standard-scss": "^12.0.0",
     "stylelint-config-standard-vue": "^1.0.0",
-    "stylelint-prettier": "^4.1.0"
+    "stylelint-prettier": "^5.0.0"
   },
   "devDependencies": {
     "postcss": "^8.4.32",
-    "stylelint": "^16.0.0"
+    "stylelint": "^16.0.2"
   },
   "peerDependencies": {
     "stylelint": "^16"
