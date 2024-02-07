@@ -11,5 +11,11 @@ module.exports = {
     // Prettier
     "prettier/prettier": [true, { tabWidth: 2 }],
     "selector-class-pattern": null,
+    // Other
+    "at-rule-empty-line-before": null,
+    "no-invalid-position-at-import-rule": null,
+    "rule-empty-line-before": null,
+    "scss/operator-no-unspaced": null,
+    "scss/operator-no-newline-after": null,
   },
 };
