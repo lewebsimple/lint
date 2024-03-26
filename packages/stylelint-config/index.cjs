@@ -18,4 +18,5 @@ module.exports = {
     "scss/operator-no-unspaced": null,
     "scss/operator-no-newline-after": null,
   },
+  ignoreFiles: ["**/*", "!**/*.{css,scss,vue}"],
 };
