@@ -1,4 +1,5 @@
 import { createConfigForNuxt } from '@nuxt/eslint-config/flat'
+import { browser } from 'globals'
 
 export default createConfigForNuxt({
   features: {
@@ -10,5 +11,10 @@ export default createConfigForNuxt({
       quotes: "double",
       semi: true,
     }
+  }
+}).prepend({
+  ignores: ["dist/**", "vendor/**"],
+  languageOptions: {
+    globals: { ...browser }
   }
 });
