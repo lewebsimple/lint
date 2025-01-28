@@ -7,7 +7,7 @@
     "lint": "eslint --fix . && stylelint --fix \"**/*.{css,scss,vue}\""
   },
   "devDependencies": {
-    "typescript": "^5.6.3"
+    "typescript": "^5.7.3"
   },
   "pnpm": {
     "peerDependencyRules": {
